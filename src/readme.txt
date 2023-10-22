@@ -3,9 +3,9 @@
 - Inicio de sesión <- Diego
 - Perfil Amigos <- Omar
 - Perfil Usuario <- Omar
-- Pagina principal <- Cesar
+- Pagina principal <- Cesar *
 - Pagina de cada Musica <-Henry
-- Pagina de cada publicación 
+- Pagina de cada publicación <- Henry 
 - Pagina Premium <-Andres
 - Pagina de Eventos <- Diego
 
