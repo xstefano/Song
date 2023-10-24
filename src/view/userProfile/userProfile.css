@@ -277,7 +277,6 @@ body {
 
 
 /*Estilos Contenido Principal*/
-
 .main-content {
 
 	grid-column: 2/-1;
@@ -289,6 +288,7 @@ body {
 	flex-direction: column;
 	gap: 3rem;
 }
+
 
 .title-playlist {
 	font-size: 2.4rem;
@@ -421,5 +421,65 @@ body {
     position: absolute;
     bottom: 3px;
     right: 3px;
+}
+
+
+
+
+/*estilos para el circulo de perfil*/
+.circle {
+    width: 350px;
+    height: 350px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    top: 130px;
+    left: 70px;
+}
+
+.circle img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.choose-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.circle:hover .choose-text {
+    opacity: 1;
+}
+
+
+
+/*Estilos para las letritas*/
+
+.perfil {
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: -150px;
+    left: 500px;
+
+  }
+
+
+.nombrePerfil {
+    background-color: #000;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: -100;
+    left: 500;
 }
 
