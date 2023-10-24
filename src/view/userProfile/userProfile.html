@@ -157,7 +157,8 @@
         </nav>
         <section class="main-content">
             <div class="circle">
-                <img src="src\assets\images\perfil.png">
+                <img src="\src\assets\images\perfilAnon.png">
+                <i class="fa-solid fa-pencil choose-text"></i>
                 <span class="choose-text">Elegir foto</span>
             </div>
 
@@ -173,19 +174,18 @@
                 </button>
             </div>
 
-            
 
             <div class="dropdown">
-                <button class="boton3puntitos">. . .</button> <!-- Los tres puntos (...) se representan con el código de entidad HTML -->
+                <button class="boton3puntitos">. . .</button>
+                <!-- Los tres puntos (...) se representan con el código de entidad HTML -->
                 <div class="dropdown-content">
                     <a href="#">Editar perfil</a>
                     <a href="#" id="copyLink">Copiar enlace de perfil</a>
                 </div>
             </div>
-            
             <script>
                 // Función para copiar el enlace de perfil al portapapeles
-                document.getElementById("copyLink").addEventListener("click", function() {
+                document.getElementById("copyLink").addEventListener("click", function () {
                     const url = "http://127.0.0.1:5502/src/view/userProfile/userProfile.html#"; // Reemplaza con la URL de tu perfil
                     const dummyTextarea = document.createElement("textarea");
                     document.body.appendChild(dummyTextarea);
@@ -196,6 +196,120 @@
                     alert("Enlace de perfil copiado al portapapeles: " + url);
                 });
             </script>
+
+            <div class="container-name-forMe">
+                <h1 class="title-playlist">
+                    Canciones Favoritas
+                </h1>
+            </div>
+
+            <div class="container-card-forMe">
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-name-forMe">
+                <h1 class="title-playlist">
+                    Listas de reproducción
+                </h1>
+            </div>
+
+            <div class="container-card-forMe">
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-name-forMe">
+                <h1 class="title-playlist">
+                    Artistas Seguidos
+                </h1>
+            </div>
+
+            <div class="container-card-forMe">
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+            </div>
 
 
         </section>
