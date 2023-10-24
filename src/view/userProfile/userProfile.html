@@ -168,10 +168,36 @@
             </div>
 
             <div class="nombrePerfil">
-                <button>
+                <button class="nombrePerfil2">
                     Aldo58
                 </button>
             </div>
+
+            
+
+            <div class="dropdown">
+                <button class="boton3puntitos">. . .</button> <!-- Los tres puntos (...) se representan con el código de entidad HTML -->
+                <div class="dropdown-content">
+                    <a href="#">Editar perfil</a>
+                    <a href="#" id="copyLink">Copiar enlace de perfil</a>
+                </div>
+            </div>
+            
+            <script>
+                // Función para copiar el enlace de perfil al portapapeles
+                document.getElementById("copyLink").addEventListener("click", function() {
+                    const url = "http://127.0.0.1:5502/src/view/userProfile/userProfile.html#"; // Reemplaza con la URL de tu perfil
+                    const dummyTextarea = document.createElement("textarea");
+                    document.body.appendChild(dummyTextarea);
+                    dummyTextarea.value = url;
+                    dummyTextarea.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummyTextarea);
+                    alert("Enlace de perfil copiado al portapapeles: " + url);
+                });
+            </script>
+
+
         </section>
     </main>
     <!-- Recurso y Script para el uso de iconos de FontAwesome -->
