@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Usuario</title>
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+
+<body>
+    <main class="container">
+<!-- TopBar -->
+<div class="topbar">
+    <div class="container-arrows">
+        <div class="container-arrow-left">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="container-arrow-right">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="buttons-user">
+        <a href="" class="btn-premium">Obtener Premium</a>
+        <div class="pipe"></div>
+        <a href="/src/view/user/Register/register.html" class="btn-register">Registrarte</a>
+        <a href="/src/view/user/login/login.html" class="btn-login btn-full">Iniciar sesión</a>
+    </div>
+</div>
+<!-- Side bar -->
+<nav class="navbar">
+    <div class="container-logo" style="margin-left: 80px;">
+        <a href="/src/index.html" class="link-logo">
+                <img src="/src/assets/images/upn-sound.png" alt="upn-sound-img" style="width: 110px;">					
+        </a>
+    </div>
+    <ul class="nav-main">
+        <li>
+            <a href="/src/view/user/home/home.html"> <i class="fa-solid fa-house"></i>Inicio </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>Buscar</a
+            >
+        </li>
+        <li>
+            <a href="/src/view/user/profile/profile.html">
+                <i class="fa-solid fa-user"></i>Perfil</a
+            >
+        </li>
+        <li>
+            <a  href="/src/view/user/events/events.html"
+                ><i class="fa-solid fa-calendar-days"></i>Eventos</a
+            >
+        </li>
+        <li>
+            <a href="#"
+                ><i class="fa-solid fa-book"></i>Tu biblioteca</a
+            >
+        </li>
+    </ul>
+
+    <div class="contacts">
+        <button class="btn-create-list">
+            <i class="fa-solid "></i>
+            Contactos
+        </button>
+        <button class="btn-create-list">
+            <div class="user-avatar">
+                <img src="/src/assets/images/persona.ico" style="width: 50px; border-radius: 50%;" alt="User Avatar">
+                <i class="fa-solid fa-circle user-status" style="color: #149603; font-size: 1.5rem;"></i>
+            </div>
+            <span>Ana Medina</span>
+        </button>
+        <button class="btn-create-list">
+            <div class="user-avatar">
+                <img src="/src/assets/images/persona1.ico" style="width: 50px; border-radius: 50%;" alt="User Avatar">
+                <i class="fa-solid fa-circle user-status" style="color: #b0b0b0; font-size: 1.5rem;"></i>
+            </div>
+            <span>Valeria Martines</span>
+        </button>
+        <button class="btn-create-list">
+            <div class="user-avatar">
+                <img src="/src/assets/images/persona2.ico" style="width: 50px; border-radius: 50%;" alt="User Avatar">
+                <i class="fa-solid fa-circle-minus user-status" style="color: #a50303; font-size: 1.5rem;"></i>
+            </div>
+            <span>Claudio Herrera</span>
+        </button>
+        <button class="btn-create-list">
+            <div class="user-avatar">
+                <img src="/src/assets/images/persona3.ico" style="width: 50px; border-radius: 50%;" alt="User Avatar">
+                <i class="fa-solid fa-circle user-status" style="color: #149603; font-size: 1.5rem;"></i>
+            </div>
+            <span>Oscar Ramirez</span>
+        </button>
+        <button class="btn-create-list">
+            <div class="user-avatar">
+                <img src="/src/assets/images/persona4.ico" style="width: 50px; border-radius: 50%;" alt="User Avatar">
+                <i class="fa-solid fa-circle user-status" style="color: #149603; font-size: 1.5rem;"></i>
+            </div>
+            <span>Ricardo Flores</span>
+        </button>
+        <button class="btn-create-list">
+            <div class="user-avatar">
+                <img src="/src/assets/images/persona5.ico" style="width: 50px; border-radius: 50%;" alt="User Avatar">
+                <i class="fa-solid fa-circle user-status" style="color: #149603; font-size: 1.5rem;"></i>
+            </div>
+            <span>Nicolas Gonzales</span>
+        </button>
+        <button class="btn-create-list">
+            <div class="user-avatar">
+                <img src="/src/assets/images/persona6.ico" style="width: 50px; border-radius: 50%;" alt="User Avatar">
+                <i class="fa-solid fa-circle user-status" style="color: #149603; font-size: 1.5rem;"></i>
+            </div>
+            <span>Natalia Sanchez</span>
+        </button>
+    </div>
+    
+    <div class="container-links">
+        <button class="btn-language">
+            <i class="fa-solid fa-sign-out"></i>
+            Logout
+        </button>
+    </div>
+</nav>
+        <section class="main-content">
+            <div class="circle">
+                <img src="/src/assets/images/perfilAnon.png">
+                <i class="fa-solid fa-pencil choose-text"></i>
+                <span class="choose-text">Elegir foto</span>
+            </div>
+
+        
+
+            <div class="nombrePerfil">
+                <button class="nombrePerfil2">
+                    Aldo58
+                </button>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="boton3puntitos">. . .</button>
+                
+                <div class="dropdown-content">
+                    <a href="#">Editar perfil</a>
+                    <a href="#" id="copyLink">Copiar enlace de perfil</a>
+                </div>
+            </div>
+            <script>
+                document.getElementById("copyLink").addEventListener("click", function () {
+                    const url = "http://127.0.0.1:5502/src/view/userProfile/userProfile.html#";
+                    const dummyTextarea = document.createElement("textarea");
+                    document.body.appendChild(dummyTextarea);
+                    dummyTextarea.value = url;
+                    dummyTextarea.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummyTextarea);
+                    alert("Enlace de perfil copiado al portapapeles: " + url);
+                });
+            </script>
+
+            <div class="container-name-forMe">
+                <h1 class="title-playlist">
+                    Canciones Favoritas
+                </h1>
+            </div>
+
+            <div class="container-card-forMe">
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-name-forMe">
+                <h1 class="title-playlist">
+                    Listas de reproducción
+                </h1>
+            </div>
+
+            <div class="container-card-forMe">
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-name-forMe">
+                <h1 class="title-playlist">
+                    Artistas Seguidos
+                </h1>
+            </div>
+
+            <div class="container-card-forMe">
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+
+                <div class="card-forMe">
+                    <a class="card" data-url="#">
+                        <div class="card-img">
+                            <img src="/src/assets/images/logo.ico" alt="img">
+                        </div>
+                        <h2>Mix Cumbia</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <!-- Recurso y Script para el uso de iconos de FontAwesome -->
+    <!-- 
+			https://fontawesome.com/search?q=library&o=r
+		 -->
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
