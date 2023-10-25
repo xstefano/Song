@@ -477,14 +477,7 @@ body {
 
 /*Estilos para las letritas*/
 
-/*.perfil {
-	color: white;
-	font-size: 10px;
-	position: relative;
-	top: -60px;
-	left: 380px;
 
-}*/
 
 .nombrePerfil2 {
 	background-color: #121212;
@@ -532,7 +525,7 @@ body {
     /* display: inline-block; */
     width: 10rem;
     /* height: 5rem; */
-    bottom: 90px;
+    bottom: 70px;
     left: 40px;
 	
 }
