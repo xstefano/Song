@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Eventos</title>
+    <link rel="stylesheet" href="moderator.css">
+    <link rel="stylesheet" href="listaEventos.css">
+</head>
+
+<body>
+    <main class="container">
+        <!-- TopBar -->
+			<div class="topbar">
+
+			</div>
+
+            <!-- Side bar -->
+			<nav class="navbar">
+				<div class="container-logo" style="margin-left: 80px;">
+					<a href="#" class="link-logo">
+							<img src="/src/assets/images/adminlogo.png" alt="upn-sound-img" style="width: 110px;">					
+					</a>
+				</div>
+				<ul class="nav-main">
+					<li>
+						<a href="/src/view/moderator/moderator.html">
+                             <i class="fa-solid fa-house"></i>Inicio </a>
+					</li>
+					<li>
+						<a href="/src/view/moderator/listaUsuarios.html">
+							<i class="fa-solid fa-magnifying-glass">
+							</i>Lista Usuarios</a>
+					</li>
+                    <li>
+						<a href="/src/view/moderator/listaEventos.html">
+							<i class="fa-solid fa-magnifying-glass">
+							</i>Lista Eventos</i></a>
+					</li>
+					<li>
+						<a href="/src/view/moderator/solicitudesBan.html"
+							><i class="fa-solid fa-magnifying-glass">
+							</i>Solicitudes Ban</a
+						>
+					</li>
+					<li>
+						<a href="/src/view/moderator/reporteUsuarios.html"
+							><i class="fa-solid fa-magnifying-glass">
+							</i>Reporte Usuarios</i></a
+						>
+					</li>
+				</ul>
+	
+				<div class="container-links">
+					<button class="btn-language">
+						<i class="fa-solid fa-sign-out"></i>
+						Logout
+					</button>
+				</div>
+			</nav>
+
+            <section class="main-content2">
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="titulo-centrado">Lista de Eventos</h1>
+    
+    
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Evento</th>
+                            <th>Organizador</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="/src/assets/images/evento1.png" alt="Icono de evento" class="icono-evento">
+                            </td>
+                            <td>
+                                <img src="/src/assets/images/persona.ico" alt="Icono de usuario" class="icono-usuario">
+                                @puma81
+                            </td>
+                            <td>
+                                <button class="boton-editar">Ver</button>
+                                <button class="boton-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img src="/src/assets/images/evento1.png" alt="Icono de evento" class="icono-evento">
+                            </td>
+                            <td>
+                                <img src="/src/assets/images/persona2.ico" alt="Icono de usuario" class="icono-usuario">
+                                @martinesagau
+                            </td>
+                            <td>
+                                <button class="boton-editar">Ver</button>
+                                <button class="boton-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img src="/src/assets/images/evento1.png" alt="Icono de evento" class="icono-evento">
+                            </td>
+                            <td>
+                                <img src="/src/assets/images/user1.png" alt="Icono de usuario" class="icono-usuario">
+                                @vilchestao
+                            </td>
+                            <td>
+                                <button class="boton-editar">Ver</button>
+                                <button class="boton-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <img src="/src/assets/images/evento1.png" alt="Icono de evento" class="icono-evento">
+                            </td>
+                            <td>
+                                <img src="/src/assets/images/user3.png" alt="Icono de usuario" class="icono-usuario">
+                                @adiranope
+                            </td>
+                            <td>
+                                <button class="boton-editar">Ver</button>
+                                <button class="boton-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+    
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </section>
+
+    </main>
+
+		<script
+        src="https://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>

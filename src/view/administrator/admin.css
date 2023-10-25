@@ -9,7 +9,7 @@
 
 html {
 	/* Tamaño fuente para todo el archivo */
-	font-size: 62%; 
+	font-size: 62%; 	
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 	display: grid;
 	grid-template-columns: 30rem 1fr;
 	grid-template-rows: min-content 1fr min-content;
-
+	height: 100%;
 
 }
 
@@ -290,6 +290,19 @@ body {
 	gap: 3rem;
 }
 
+
+.main-content2 {
+	grid-column: 2/-1;
+	background-color: #cfcdcd;
+	padding: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	width: 100%;
+	height: 100%;
+}
+  
+
 .title-playlist {
 	font-size: 2.4rem;
 	color: #fff;
@@ -472,5 +485,9 @@ body {
 }
 
 .boton-editar:hover, .boton-eliminar:hover {
-    background-color: #45a049;
+    background-color: #0066ff;
+}
+
+.centered-div {
+    margin: 0 auto;
 }
