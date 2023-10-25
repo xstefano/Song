@@ -1,0 +1,57 @@
+.main-content2 .custom-list {
+    padding: 1.5rem 1.5rem 1.5rem 4em;
+    border: 0.3rem solid turquoise;
+    columns: 25rem;
+    column-gap: 7rem;
+    column-rule: 4px dotted turquoise;
+    border-radius: 0.5rem;
+    font-size: 1em;
+}
+
+.main-content2 .custom-list > * + * {
+    margin-top: 1rem;
+}
+
+.main-content2 .custom-list li {
+    break-inside: avoid;
+    font-size: 1.4em;
+}
+
+.main-content2 .custom-list::marker {
+    content: counters(list-item, '') ': ';
+    font-weight: 700;
+    font-size: 1.5em;
+    color: turquoise;
+}
+
+.main-content2 .custom-list li span {
+    display: block;
+    font-size: 1.6em;
+}
+
+.main-content2 .custom-list li span:first-child {
+    font-size: 1.8em;
+}
+
+.main-content2 .custom-list li span:last-child {
+    font-style: italic;
+    font-size: 1.4em;
+}
+h1 {
+    font-size: 48px;
+    text-shadow: -1px -1px rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -3px 0 4px #000;
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    color: #b89d06;
+    padding: 64px 0 0 0;
+    margin: 16px auto;
+    font-weight: lighter;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    display: block;
+    min-height: 172px;
+    min-width: 800;
+    max-height: 172px;
+    max-width: 800px;
+}
