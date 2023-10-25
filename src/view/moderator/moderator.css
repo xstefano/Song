@@ -458,3 +458,9 @@ tr:hover td{
 	background-color: #a3a3a3;
 	color: white;
 }
+
+/* Style Tag i */
+i{
+    margin-right: 2rem;
+    cursor: pointer;
+}
