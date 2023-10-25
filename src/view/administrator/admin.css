@@ -472,5 +472,9 @@ body {
 }
 
 .boton-editar:hover, .boton-eliminar:hover {
-    background-color: #45a049;
+    background-color: #0066ff;
+}
+
+.centered-div {
+    margin: 0 auto;
 }
