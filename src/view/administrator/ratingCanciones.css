@@ -79,6 +79,7 @@
         .graph td {
             display: block;
             text-align: center;
+            font-size: 1.4em;
         }
 
         .graph tbody th {
@@ -106,7 +107,7 @@
         }
 
         .graph tr:hover td {
-            opacity: 0.7;
+            opacity: 1;
         }
 
         .graph td span {
@@ -118,19 +119,18 @@
             padding: 0.5em 0;
             margin: -1em 0 0;
             font: normal 85%/120% arial, helvetica, sans-serif;
-            /* 			background:white; */
-            /* 			box-shadow:0 0 0.25em rgba(0,0,0,0.6); */
             font-weight: bold;
             opacity: 0;
             transition: opacity 0.5s;
             color: white;
+            font-size: 1.8em;
+            
         }
 
         .toggleGraph:checked+table td span,
         .graph tr:hover td span {
             width: 4em;
             margin-left: -2em;
-            /* 1/2 the declared width */
             opacity: 1;
         }
     }
