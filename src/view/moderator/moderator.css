@@ -39,6 +39,7 @@ body {
 	top: 0;
 	right: 0;
 	width: calc(100% - 30rem);
+	height: 70px;
 }
 
 .container-arrows {
@@ -282,7 +283,7 @@ body {
 
 	grid-column: 2/-1;
 
-	background-color: #121212;
+	background-color: #ffffff;
 	padding: 2.5rem;
 
 	display: flex;
