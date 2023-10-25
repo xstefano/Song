@@ -1,0 +1,54 @@
+.content-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 1.2em;
+    min-width: 600px;
+    min-height: 300px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #d4ba26;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 20px 25px;
+    border: 1px solid #dddddd; /* Agrega un borde de 1px sólido entre cada columna */
+}
+
+.titulo-centrado {
+    text-align: center;
+    /* Otros estilos específicos para este h1 si los necesitas */
+}
+
+.boton-editar {
+    background-color: #3d3d3b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.boton-eliminar {
+    background-color: #9b2e13;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.boton-editar:hover, .boton-eliminar:hover {
+    background-color: #0066ff;
+}
+
+.centered-div {
+    margin: 0 auto;
+}
