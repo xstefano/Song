@@ -293,7 +293,7 @@ body {
 
 .main-content2 {
 	grid-column: 2/-1;
-	background-color: #ebe7e7;
+	background-color: #cfcdcd;
 	padding: 2.5rem;
 	display: flex;
 	flex-direction: column;
