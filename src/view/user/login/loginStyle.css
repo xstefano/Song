@@ -34,7 +34,7 @@ header .logo {
 
 /* Estilos para la sección principal */
 section {
-    background: linear-gradient(to top, #020000, #000000e9);
+    background: linear-gradient(to top, #020000, #020000);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +130,7 @@ section div.main .login form input {
   position: absolute;
   width: 11px;
   height: 10px;
-  background: black;
+  background: 020000;
   border-radius: 50em;
   transition: 0.1s;
 }
