@@ -1,0 +1,104 @@
+/* Variables */
+:root {
+    --width: 650px;
+    --height: 600px;
+    --bar-size: 45px;
+    --bar-color: #c5b203;
+    --bar-rounded: 3px;
+    --grid-color: #aaa;
+  }
+  
+  /* Estilos */
+  .chart-wrap {
+    width: var(--width);
+    height: var(--height);
+    font-family: sans-serif;
+  }
+  h1 {
+    font-size: 48px;
+    text-shadow: -1px -1px rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -3px 0 4px #000;
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    color: #b89d06;
+    padding: 64px 0 0 0;
+    margin: 16px auto;
+    font-weight: lighter;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    display: block;
+    min-height: 172px;
+    min-width: 800;
+    max-height: 172px;
+    max-width: 800px;
+}
+  .grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid var(--grid-color);
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 19.5%,
+      rgba(170, 170, 170, 0.7) 20%
+    );
+  
+    .bar {
+      background-color: var(--bar-color);
+      width: var(--bar-size);
+      height: var(--bar-value);
+      align-self: flex-end;
+      margin: 0 auto;
+      border-radius: var(--bar-rounded) var(--bar-rounded) 0 0;
+      position: relative;
+  
+      &:hover {
+        opacity: 0.7;
+      }
+  
+      &::after {
+        content: attr(data-name);
+        top: -3em;
+        padding: 10px;
+        display: inline-block;
+        white-space: nowrap;
+        position: absolute;
+        transform: rotate(-45deg);
+      }
+    }
+  
+    &.horizontal {
+      flex-direction: column;
+      border-bottom: none;
+      border-left: 2px solid var(--grid-color);
+      background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 19.5%,
+        rgba(170, 170, 170, 0.7) 20%
+      );
+  
+      .bar {
+        height: var(--bar-size);
+        width: var(--bar-value);
+        align-self: flex-start;
+        margin: auto 0 auto 0;
+        border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
+  
+        &::after {
+          top: initial;
+          left: 100%;
+          padding: 0 10px;
+          display: inline-block;
+          white-space: nowrap;
+          position: absolute;
+          transform: rotate(0deg);
+          line-height: var(--bar-size);
+        }
+      }
+    }
+  }
+  
