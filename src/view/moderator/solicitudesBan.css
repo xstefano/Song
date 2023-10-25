@@ -52,3 +52,8 @@
 .centered-div {
     margin: 0 auto;
 }
+
+.icono-usuario {
+    width: 40px; /* Define el ancho del icono de usuario */
+    height: 40px; /* Define la altura del icono de usuario */
+}
